@@ -1,0 +1,76 @@
+ /* Genaral style */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #252424;
+  background-color:burlywood ;
+}
+
+header{
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.a-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  font-size: large;
+}
+
+.anav-links {
+  list-style: none;
+  font-weight: 300;
+  letter-spacing: 2px;
+  display: flex;
+  gap: 1.2rem;
+  
+}
+
+.anav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.anav-links a:hover {
+  color: #e60f0f;
+}
+ 
+ .about {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2b2828;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #312f2f;
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width:768px){
+  .product-grid{
+    grid-template-columns: 1fr;
+  }
+  header h1{
+    font-size: 2rem;
+  }
+  .shop-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

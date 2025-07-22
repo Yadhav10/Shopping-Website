@@ -1,0 +1,89 @@
+/* Genaral style */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+  background-color: burlywood;
+}
+
+header{
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.s-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  0.5rem 0.5rem;
+  font-size: large;
+}
+
+.snav-links {
+  list-style: none;
+  font-weight: 300;
+  letter-spacing: 2px;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.snav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.snav-links a:hover {
+  color: #e60f0f;
+}
+
+
+ .signup-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #423a3a;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.signup-form button {
+  padding: 10px 10px;
+  background-color: #e65555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #ce2020;
+}
+
+
+
+@media (max-width:768px){
+  .product-grid{
+    grid-template-columns: 1fr;
+  }
+  header h1{
+    font-size: 2rem;
+  }
+  .shop-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
